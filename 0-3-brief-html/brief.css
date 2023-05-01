@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap');
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 30px;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #f9db34;
+}
+
+.chip > a {
+  text-decoration: none;
+  color: black;
+}
+
+.chip--open {
+  background-color: #899e64;
+}
+
+.chip--closed {
+  background-color: #b88172;
+}
+
+.thumbnail {
+  border: none;
+  padding: 5px;
+  width: 150px;
+}
+
+.thumbnail:hover {
+  box-shadow: 0 0 2px 1px rgba(36, 37, 37, 0.5);
+}

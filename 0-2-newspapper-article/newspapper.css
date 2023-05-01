@@ -1,0 +1,40 @@
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    width: clamp(600px, 100%, 800px);
+    margin: 0 auto;
+}
+
+#date {
+    text-align: center;
+}
+
+.asset {
+    align-items: center;
+    width: 33vw;
+}
+
+.form__field {
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    width: clamp(600px, 100%, 800px);
+    margin: 0 auto;
+}
+
+.form__field--col {
+    flex-direction: column;
+}
+
+.label{
+    place-content: top;
+}
+
+.url-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}

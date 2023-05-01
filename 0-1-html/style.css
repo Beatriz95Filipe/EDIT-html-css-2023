@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    background: orange;
+    margin: 0;
+    padding: 0;
+  }
+  
+  aside, main {
+    min-height: 100vh;
+  }
+  aside {
+    background: red;
+    width: 300px;
+  flex-shrink: 0;
+    position: fixed;
+   
+  }
+  
+  main {
+    background: blue;
+    margin-left: auto;
+    width: calc(100% - 300px)
+  }

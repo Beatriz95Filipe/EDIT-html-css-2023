@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product_page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="container--fluid">
+        <a class="nav__logo" href=""><img src="assets/edit-extended-logo.png" alt="brand-logo"></a>
+        <div class="nav__menu">
+            <a href="" class="menu__item">
+                <span class="menu__item__label">Seating</span>
+            </a>
+            <a href="" class="menu__item">
+                <span class="menu__item__label">Living Room</span>
+            </a>
+            <a href="" class="menu__item">
+                <span class="menu__item__label">Outdoor</span>
+            </a>
+            <a href="" class="menu__item">
+                <span class="menu__item__label">Bedroom</span>
+            </a>
+            <a href="" class="menu__item">
+                <span class="menu__item__label">Storage</span>
+            </a>
+        </div>
+    </nav>
+    <aside></aside>
+    <main>
+        <section class="container">
+            <p class="product__title">Nomad</p>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="carousel">
+                        <img src="./assets/products/1/product.webp" alt="nomad1" id="slide-1">
+                        <img src="./assets/products/1/product-hover.webp" alt="nomad2" id="slide-2">
+                        <img src="./assets/products/1/product-hover-1.jpg" alt="nomad3" id="slide-3">
+                        <img src="./assets/products/1/product-hover-2.jpg" alt="nomad4" id="slide-4">
+                        <img src="./assets/products/1/product-hover-3.jpg" alt="nomad5" id="slide-5">
+                    </div>
+                    <div class="carousel__preview">
+                        <a href="#slide-1"><img src="./assets/products/1/product.webp" alt="nomad1"></a>
+                        <a href="#slide-2"><img src="./assets/products/1/product-hover.webp" alt="nomad2"></a>
+                        <a href="#slide-3"><img src="./assets/products/1/product-hover-1.jpg" alt="nomad3"></a>
+                        <a href="#slide-4"><img src="./assets/products/1/product-hover-2.jpg" alt="nomad4"></a>
+                        <a href="#slide-5"><img src="./assets/products/1/product-hover-3.jpg" alt="nomad5"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="choosen__product__name">Block Nomad Sofa</p>
+                    <p class="choosen__product__price">€1595 + Free Shipping</p>
+                    <form action="">
+                        <div class="choosen__product__color">
+                            <p class="choosen__color">Fabric Color:</p>
+                            <input type="radio" name="color" id="navy-blue"><label class="color" for="navy-blue">Navy Blue</label>
+                            <input type="radio" name="color" id="leaf"><label class="color" for="leaf">Leaf</label>
+                            <input type="radio" name="color" id="red-wine"><label class="color" for="red-wine">Red Wine</label>
+                            <input type="radio" name="color" id="night"><label class="color" for="night">Night</label>
+                            <input type="radio" name="color" id="light-grey"><label class="color" for="light-grey">Light Grey</label>
+                        </div>
+                        <div class="styles">
+                            <div class="arm__style">
+                                <p class="choices">Arm Style</p>
+                                <div class="styles__choices">
+                                    <div class="arm__round">
+                                        <input type="radio" name="arm" id="round">
+                                        <div class="arm__round__icon"></div>
+                                    </div>
+                                    <div class="arm__fillet">
+                                        <input type="radio" name="arm" id="fillet">
+                                        <div class="arm__fillet__icon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cushion__style">
+                                <p class="choices">Flip Back Cushions</p>
+                                <div class="styles__choices">
+                                    <div class="cushion__flat">
+                                        <input type="radio" name="cushion" id="flat">
+                                        <div class="cushion__flat__icon"></div>
+                                    </div>
+                                    <div class="cushion__nail">
+                                        <input type="radio" name="cushion" id="nail">
+                                        <div class="cushion__nail__icon"></div>
+                                        <div class="cushion__nail__c1"></div>
+                                        <div class="cushion__nail__c2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upgrades">
+                            <p class="choices">Upgrades</p>
+                            <div class="upgrade__check">
+                                <input type="checkbox" name="upgrade" id="moveable">
+                                <label for="moveable">Moveable chaise + €495</label>
+                            </div>
+                            <div class="upgrade__check">
+                                <input type="checkbox" name="upgrade" id="ottoman">
+                                <label for="ottoman">Ottoman + €345</label>
+                            </div>
+                            <div class="upgrade__check">
+                                <input type="checkbox" name="upgrade" id="lumbar">
+                                <label for="lumbar">Lumbar Pillows + €135</label>
+                            </div>
+                            <div class="upgrade__check">
+                                <input type="checkbox" name="upgrade" id="sleep">
+                                <label for="sleep">Sleep Kit + €295</label>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <button class="btn__cart">add to cart</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <p class="about__title">Dimensions</p>
+            <div class="row dimensions">
+                <div class="col-lg-5">
+                    <table>
+                        <tr>
+                            <th>General Dimensions</th>
+                            <td>86" L x 61" D x 33" H</td>
+                        </tr>
+                        <tr>
+                            <th>Seat Height</th>
+                            <td>17"</td>
+                        </tr>
+                        <tr>
+                            <th>Arm Height</th>
+                            <td>23"</td>
+                        </tr>
+                        <tr>
+                            <th>Chaise Length</th>
+                            <td>13"</td>
+                        </tr>
+                        <tr>
+                            <th>Seat Depth</th>
+                            <td>134"</td>
+                        </tr>
+                        <tr>
+                            <th>Chaise Seat Depth</th>
+                            <td>11"</td>
+                        </tr>
+                        <tr>
+                            <th>Leg Height</th>
+                            <td>7"</td>
+                        </tr>
+                        <tr>
+                            <th>Ottoman Dimensions</th>
+                            <td>26" L x 26" W x 17" H</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-7">
+                    <img src="assets/product-dimensions.png" alt="product-dimensions">
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row__left">
+                <p class="about__title">About this piece</p>
+                <p class="about">The ideal three-seat sofa featuring one seat with a chaise lounge addition, one seat with an ottoman, and one seat for the chiropractor who loves to sit upright with their feet on the floor. Like everything we make, our modular design is incredibly easy to move and packed with all the clever, life-changing features you expect from Burrow, starting with a built-in USB charger.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <p class="about__title__s">Customizable</p>
+                    <p class="about__s">Create your ideal sectional sofa with five fabric colors, six leg finishes, and three armrest heights. You can even swap the reversible back cushions: one side is tufted for a classic look, the other smooth and contemporary.</p>
+                </div>
+                <div class="col-lg-5">
+                    <p class="about__title__s">Adaptable</p>
+                    <p class="about__s">Rest easy with the knowledge that your new furniture can grow and expand with your life, thanks to the universal, modular design of our Nomad Collection.</p>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </section>
+        <section class="container">
+            <p class="about__title__key">Key Features</p>
+            <div class="key-feat">
+                <div class="key-feat__thumbnail">
+                    <img src="assets/icon-2.webp" alt="Customizable">
+                    <span>Customizable</span>
+                </div>
+                <div class="key-feat__thumbnail">
+                    <img src="assets/icon-3.webp" alt="Frame" id="feat2">
+                    <span>Frame</span>
+                </div>
+                <div class="key-feat__thumbnail">
+                    <img src="assets/icon-4.webp" alt="Hardware" id="feat3">
+                    <span>Hardware</span>
+                </div>
+                <div class="key-feat__thumbnail">
+                    <img src="assets/icon-1.webp" alt="Charger" id="feat4">
+                    <span>Charger</span>
+                </div>
+                <div class="key-feat__thumbnail">
+                    <img src="assets/icon-5.webp" alt="Legs" id="feat5">
+                    <span>Legs</span>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row videos">
+                <div class="col-lg-6">
+                    <video class="product-video" muted autoplay loop>
+                        <source src="assets/product-video-1.mp4">
+                    </video>
+                </div>
+                <div class="col-lg-6">
+                    <p class="slogan__video">Durable enough for everyday drama</p>
+                    <p class="about">Each and every component of our furniture is selected for durability, from the galvanized steel latches to the precision-milled Baltic Birch frame. The fabric is inherently scratch-resistant, thanks to an incredibly tight weave, which makes it perfect for pets and their parents.</p>
+                    <div class="zero">
+                        <div class="col-lg-6">
+                            <p class="about__title__s">Low carbon footprint</p>
+                            <p>Fabric made from upcycled materials</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="about__title__s">Sustainable wood</p>
+                            <p>Sourced from responsibly managed forests</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="slogan__video">Don't sweat the spills</p>
+                    <p class="about">Our olefin fabric is stain-resistant thanks to a deep dyeing process that colors each individual strand to the core, as opposed to other fibers that have little pores that absorb stains. You can even spray spills with a water and bleach solution (yes, we said bleach) and blot it out to clean stains.</p>
+                    <div class="zero">
+                        <div class="col-lg-6">
+                            <p class="about__title__s">Non toxic</p>
+                            <p>Zero chemical additives or treatments</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="about__title__s">Zero PFCs</p>
+                            <p>Fabric free of dangerous formaldehydes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <video class="product-video" muted autoplay loop>
+                        <source src="assets/product-video-2.mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <p class="slogan">Here's what else our designers recommend</p>
+            <div class="row category__product__thumbnail">
+                <div class="col-lg-4 product__thumbnail">
+                    <a href="./product.html">
+                        <img class="main__img" src="assets/products/1/product.webp" alt="seating1">
+                        <img class="hover__img" src="assets/products/1/product-hover.webp" alt="seating1h">
+                    </a>
+                    <p class="category__product__text">Nomad Sofa</p>
+                    <p class="category__product__price">€1595 or as low as €100/mo</p>
+                </div>
+                <div class="col-lg-4 product__thumbnail">
+                    <img class="main__img" src="assets/products/2/product.webp" alt="seating2">
+                    <img class="hover__img" src="assets/products/2/product-hover.webp" alt="seating2h">
+                    <p class="category__product__text">Nomad Sofa</p>
+                    <p class="category__product__price">€1595 or as low as €100/mo</p>
+                </div>
+                <div class="col-lg-4 product__thumbnail">
+                    <img class="main__img" src="assets/products/3/product.webp" alt="seating3">
+                    <img class="hover__img" src="assets/products/3/product-hover.webp" alt="seating3h">
+                    <p class="category__product__text">Nomad Sofa</p>
+                    <p class="category__product__price">€1595 or as low as €100/mo</p>
+                </div>
+            </div>
+        </section>
+        <form class="contact" action="">
+            <div class="subscribe">
+                <input type="email" placeholder="Sign up for enthralling couch reads">
+                <button class="btn__subscribe" type="submit">shop seating</button>
+            </div>
+            <div class="socials">
+                <a class="socials_thumbnail" href="">
+                    <img src="./assets/socials/icons8-youtube.svg" alt="youtube">
+                </a>
+                <a class="socials_thumbnail" href="">
+                    <img src="./assets/socials/icons8-instagram.svg" alt="instagram">
+                </a>
+                <a class="socials_thumbnail" href="">
+                    <img src="./assets/socials/icons8-facebook.svg" alt="facebook">
+                </a>
+            </div>
+        </form>
+    </main>
+        <footer class="container--fluid footer">
+            <div class="row footer__list">
+                <div class="col-lg-3">
+                    <ul>
+                        <li class="title">Shopping Services</li>
+                        <li><a class="footer__list" href="">Schedule Consultation</a></li>
+                        <li><a class="footer__list" href="">Showrooms</a></li>
+                        <li><a class="footer__list" href="">Trade Program</a></li>
+                        <li><a class="footer__list" href="">Outlet</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li class="title">About</li>
+                        <li><a class="footer__list" href="">Our Story</a></li>
+                        <li><a class="footer__list" href="">Reviews</a></li>
+                        <li><a class="footer__list" href="">Careers</a></li>
+                        <li><a class="footer__list" href="">Financing</a></li>
+                        <li><a class="footer__list" href="">Patents</a></li>
+                        <li><a class="footer__list" href="">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li class="title">Resources</li>
+                        <li><a class="footer__list" href="">Look Up Order Status</a></li>
+                        <li><a class="footer__list" href="">Assembly Instructions</a></li>
+                        <li><a class="footer__list" href="">Returns</a></li>
+                        <li><a class="footer__list" href="">Shipping & Delivery</a></li>
+                        <li><a class="footer__list" href="">FAQ</a></li>
+                        <li><a class="footer__list" href="">Refer a Friend</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li class="title">Contact Customer Experience</li>
+                        <li>Email: support@template.com</li>
+                        <li>Text: 224-628-7769</li>
+                        <li>Hours:</li>
+                        <li>Monday to Friday — 10a to 8p EST</li>
+                        <li>Saturday to Sunday — 10a to 2p EST</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3"></div>
+            </div>
+            <div class="footer__end">
+                <div class="copyright">
+                    <p>© 2023 Template</p>
+                    <a class="site__links" href="">Terms</a>
+                    <span> - </span>
+                    <a class="site__links" href="">Accessibility</a>
+                    <span> - </span>
+                    <a class="site__links" href="">Sitemap</a>
+                    <span> - </span>
+                    <a class="site__links" href="">Privacy</a>
+                </div>
+                <div class="adress">
+                    <p>15 W 27th Street, 9th Floor New York, NY, 10001</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

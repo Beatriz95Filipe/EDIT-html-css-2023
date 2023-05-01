@@ -1,0 +1,4179 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container--fluid {
+  width: 100%;
+}
+
+[class*=col-] {
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.row {
+  margin: 8px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.row__left {
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .row::-webkit-scrollbar {
+    display: none;
+  }
+}
+.col-lg-1 {
+  width: calc(8.3333333333% - 8px);
+}
+
+.col-lg-2 {
+  width: calc(16.6666666667% - 8px);
+}
+
+.col-lg-3 {
+  width: calc(25% - 8px);
+}
+
+.col-lg-4 {
+  width: calc(33.3333333333% - 8px);
+}
+
+.col-lg-5 {
+  width: calc(41.6666666667% - 8px);
+}
+
+.col-lg-6 {
+  width: calc(50% - 8px);
+}
+
+.col-lg-7 {
+  width: calc(58.3333333333% - 8px);
+}
+
+.col-lg-8 {
+  width: calc(66.6666666667% - 8px);
+}
+
+.col-lg-9 {
+  width: calc(75% - 8px);
+}
+
+.col-lg-10 {
+  width: calc(83.3333333333% - 8px);
+}
+
+.col-lg-11 {
+  width: calc(91.6666666667% - 8px);
+}
+
+.col-lg-12 {
+  width: calc(100% - 8px);
+}
+
+@media screen and (max-width: 1024px) {
+  .col-lg-6 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-7 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-8 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-9 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-10 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-11 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-12 {
+    width: calc(100% - 8px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-lg-1 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-2 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-3 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-4 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-5 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-6 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-7 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-8 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-9 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-10 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-11 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-12 {
+    width: calc(100% - 8px);
+  }
+}
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+.home-video {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+.btn__shop, .btn__cart {
+  background-color: #FCED70;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 24px 16px;
+}
+.btn__shop:hover, .btn__cart:hover {
+  cursor: pointer;
+}
+
+.btn__more {
+  background-color: #FCED70;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 24px 16px;
+  margin-bottom: 40px;
+}
+.btn__more:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 5px 0 lightgray;
+}
+
+.btn__subscribe {
+  background-color: #F7EEE3;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 16px 24px 16px;
+}
+.btn__subscribe:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .btn__subscribe {
+    border: 1.5px solid #F7EEE3;
+    border-radius: 4px;
+    width: 100%;
+  }
+}
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.nav__logo__main img {
+  height: 40px;
+}
+.nav__menu__main {
+  display: flex;
+  box-sizing: border-box;
+  gap: 50px;
+}
+.nav__menu__main .menu__item__label:hover {
+  color: gray;
+}
+.nav__menu__main .menu__item__dropdown {
+  display: none;
+  position: absolute;
+  background-color: red;
+  min-height: 200px;
+  z-index: 1;
+}
+.nav__menu__main .menu__item__dropdown a {
+  display: block;
+  text-decoration: none;
+}
+.nav__menu__main .menu__item__dropdown:hover {
+  display: block;
+  background-color: blue;
+}
+
+.nav__logo {
+  display: inline-block;
+  position: absolute;
+}
+.nav__logo img {
+  height: 40px;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px 0 20px;
+  gap: 50px;
+}
+.nav__menu .menu__item__label:hover {
+  color: gray;
+}
+.nav__menu .menu__item__dropdown {
+  display: none;
+  position: absolute;
+  background-color: red;
+  min-height: 200px;
+  z-index: 1;
+}
+.nav__menu .menu__item__dropdown a {
+  display: block;
+  text-decoration: none;
+}
+.nav__menu .menu__item__dropdown:hover {
+  display: block;
+  background-color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu__main, .nav__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+.splash {
+  position: relative;
+  aspect-ratio: 16/9;
+}
+.splash__items {
+  position: absolute;
+  top: 70px;
+  bottom: inherit;
+  left: 70px;
+  display: inline-block;
+}
+.splash img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .splash {
+    aspect-ratio: 1;
+  }
+  .splash__items {
+    top: inherit;
+    bottom: 70px;
+  }
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container--fluid {
+  width: 100%;
+}
+
+[class*=col-] {
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.row {
+  margin: 8px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.row__left {
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .row::-webkit-scrollbar {
+    display: none;
+  }
+}
+.col-lg-1 {
+  width: calc(8.3333333333% - 8px);
+}
+
+.col-lg-2 {
+  width: calc(16.6666666667% - 8px);
+}
+
+.col-lg-3 {
+  width: calc(25% - 8px);
+}
+
+.col-lg-4 {
+  width: calc(33.3333333333% - 8px);
+}
+
+.col-lg-5 {
+  width: calc(41.6666666667% - 8px);
+}
+
+.col-lg-6 {
+  width: calc(50% - 8px);
+}
+
+.col-lg-7 {
+  width: calc(58.3333333333% - 8px);
+}
+
+.col-lg-8 {
+  width: calc(66.6666666667% - 8px);
+}
+
+.col-lg-9 {
+  width: calc(75% - 8px);
+}
+
+.col-lg-10 {
+  width: calc(83.3333333333% - 8px);
+}
+
+.col-lg-11 {
+  width: calc(91.6666666667% - 8px);
+}
+
+.col-lg-12 {
+  width: calc(100% - 8px);
+}
+
+@media screen and (max-width: 1024px) {
+  .col-lg-6 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-7 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-8 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-9 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-10 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-11 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-12 {
+    width: calc(100% - 8px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-lg-1 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-2 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-3 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-4 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-5 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-6 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-7 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-8 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-9 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-10 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-11 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-12 {
+    width: calc(100% - 8px);
+  }
+}
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+img {
+  border-radius: 4px;
+}
+
+.categories__thumbnail {
+  position: relative;
+  margin-bottom: 40px;
+}
+.categories__thumbnail img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  position: relative;
+}
+.categories__thumbnail__text {
+  display: inline-block;
+  position: relative;
+  bottom: 25px;
+  left: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .categories__thumbnail .col-lg-4 {
+    width: calc(50% - 8px);
+  }
+}
+.scenario {
+  margin: 0 auto;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+}
+.scenario::-webkit-scrollbar {
+  display: none;
+}
+.scenario__thumbnail img {
+  width: 100%;
+  min-width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 9/16;
+}
+.scenario__thumbnail img:hover {
+  cursor: pointer;
+}
+
+.spaces {
+  margin: 8px auto;
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+}
+.spaces::-webkit-scrollbar {
+  display: none;
+}
+.spaces__thumbnail img {
+  max-width: 300px;
+}
+
+.socials_thumbnail img {
+  width: 30px;
+  aspect-ratio: 1;
+}
+
+.category__product__thumbnail {
+  margin-bottom: 40px;
+}
+
+.product__thumbnail {
+  position: relative;
+  display: inline-block;
+}
+.product__thumbnail .main__img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  position: relative;
+}
+.product__thumbnail .hover__img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: none;
+}
+.product__thumbnail:hover .hover__img {
+  display: inline;
+  cursor: pointer;
+}
+
+.key-feat {
+  margin: 8px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 16px 40px;
+}
+.key-feat__thumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.key-feat__thumbnail img {
+  max-width: 150px;
+}
+
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+.bg-info {
+  background-color: #F7EEE3;
+  padding: 80px 0 80px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.info__item {
+  display: flex;
+  align-items: center;
+}
+.info__item img {
+  max-width: 30%;
+}
+.info__item__text {
+  max-width: 70%;
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .info__item__text {
+    min-width: 90px;
+  }
+}
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+.featured {
+  background-color: #F7EEE3;
+  height: 600px;
+  padding-top: 100px;
+  margin-top: 40px;
+  position: relative;
+}
+.featured__product {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+}
+.featured__product__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  aspect-ratio: 1;
+  width: 680px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .featured {
+    height: 400px;
+    padding-top: 0;
+    position: relative;
+  }
+  .featured .col-lg-3 {
+    width: calc(50% - 8px);
+  }
+  .featured__product__img {
+    max-width: 50%;
+  }
+}
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+.btn__shop, .btn__cart {
+  background-color: #FCED70;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 24px 16px;
+}
+.btn__shop:hover, .btn__cart:hover {
+  cursor: pointer;
+}
+
+.btn__more {
+  background-color: #FCED70;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 24px 16px;
+  margin-bottom: 40px;
+}
+.btn__more:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 5px 0 lightgray;
+}
+
+.btn__subscribe {
+  background-color: #F7EEE3;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 16px 24px 16px;
+}
+.btn__subscribe:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .btn__subscribe {
+    border: 1.5px solid #F7EEE3;
+    border-radius: 4px;
+    width: 100%;
+  }
+}
+.contact {
+  background-color: #514F4D;
+  padding: 40px 8px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1.5px solid #F7EEE3;
+  border-radius: 4px;
+}
+.subscribe input {
+  background-color: #514F4D;
+  border: none;
+  outline: none;
+  width: 250px;
+  padding: 12px 8px 12px;
+}
+
+.socials {
+  display: flex;
+  gap: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: none;
+    width: 100%;
+  }
+  input {
+    border: 1.5px solid #F7EEE3;
+    border-radius: 4px;
+    width: 100%;
+  }
+  .socials {
+    display: none;
+  }
+}
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+.footer {
+  background-color: #131313;
+  padding-top: 40px;
+}
+.footer__list {
+  padding: 40px 0 40px;
+}
+
+.footer__end {
+  padding: 0 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__end {
+    flex-wrap: wrap;
+  }
+  .footer__end .adress {
+    padding: 20px 0 0;
+  }
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container--fluid {
+  width: 100%;
+}
+
+[class*=col-] {
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.row {
+  margin: 8px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.row__left {
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .row::-webkit-scrollbar {
+    display: none;
+  }
+}
+.col-lg-1 {
+  width: calc(8.3333333333% - 8px);
+}
+
+.col-lg-2 {
+  width: calc(16.6666666667% - 8px);
+}
+
+.col-lg-3 {
+  width: calc(25% - 8px);
+}
+
+.col-lg-4 {
+  width: calc(33.3333333333% - 8px);
+}
+
+.col-lg-5 {
+  width: calc(41.6666666667% - 8px);
+}
+
+.col-lg-6 {
+  width: calc(50% - 8px);
+}
+
+.col-lg-7 {
+  width: calc(58.3333333333% - 8px);
+}
+
+.col-lg-8 {
+  width: calc(66.6666666667% - 8px);
+}
+
+.col-lg-9 {
+  width: calc(75% - 8px);
+}
+
+.col-lg-10 {
+  width: calc(83.3333333333% - 8px);
+}
+
+.col-lg-11 {
+  width: calc(91.6666666667% - 8px);
+}
+
+.col-lg-12 {
+  width: calc(100% - 8px);
+}
+
+@media screen and (max-width: 1024px) {
+  .col-lg-6 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-7 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-8 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-9 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-10 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-11 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-12 {
+    width: calc(100% - 8px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-lg-1 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-2 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-3 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-4 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-5 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-6 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-7 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-8 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-9 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-10 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-11 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-12 {
+    width: calc(100% - 8px);
+  }
+}
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+.choosen__product__color label.color {
+  display: none;
+}
+.choosen__product__color input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: none;
+  margin: 0 5px 10px;
+  cursor: pointer;
+}
+.choosen__product__color input#navy-blue {
+  background-color: rgb(39, 39, 79);
+}
+.choosen__product__color input#leaf {
+  background-color: rgb(91, 112, 70);
+}
+.choosen__product__color input#red-wine {
+  background-color: rgb(91, 37, 46);
+}
+.choosen__product__color input#night {
+  background-color: rgb(20, 20, 31);
+}
+.choosen__product__color input#light-grey {
+  background-color: rgb(204, 204, 204);
+}
+.choosen__product__color input:checked {
+  border: 3px solid #FCED70;
+}
+.choosen__product__color input:checked + label.color {
+  display: inline-block;
+}
+
+.styles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.styles__choices {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.arm__round {
+  display: inline-block;
+  position: relative;
+}
+.arm__round input {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 30px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+.arm__round input:checked {
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(156, 156, 156);
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+.arm__round__icon {
+  position: relative;
+  top: -30px;
+  left: 5px;
+  width: 10px;
+  height: 20px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  background-color: rgb(156, 156, 156);
+  border: 1px solid rgb(232, 232, 232);
+}
+
+.arm__fillet {
+  display: inline-block;
+  position: relative;
+}
+.arm__fillet input {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 30px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+.arm__fillet input:checked {
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(156, 156, 156);
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+.arm__fillet__icon {
+  position: relative;
+  top: -30px;
+  left: 5px;
+  width: 10px;
+  height: 20px;
+  border-top-right-radius: 30%;
+  border-top-left-radius: 30%;
+  background-color: rgb(156, 156, 156);
+  border: 1px solid rgb(232, 232, 232);
+}
+
+.cushion__flat {
+  display: inline-block;
+  position: relative;
+}
+.cushion__flat input {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 35px;
+  height: 30px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+.cushion__flat input:checked {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(156, 156, 156);
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+.cushion__flat__icon {
+  position: relative;
+  top: -25px;
+  left: 7px;
+  width: 20px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: rgb(156, 156, 156);
+  border: 1px solid rgb(232, 232, 232);
+}
+
+.cushion__nail {
+  display: inline-block;
+  position: relative;
+}
+.cushion__nail input {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 35px;
+  height: 30px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+.cushion__nail input:checked {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(156, 156, 156);
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+.cushion__nail__icon {
+  position: relative;
+  top: -25px;
+  left: 7px;
+  width: 20px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: rgb(156, 156, 156);
+  border: 1px solid rgb(232, 232, 232);
+}
+.cushion__nail__c1 {
+  position: relative;
+  top: -37px;
+  left: 20px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: rgb(232, 232, 232);
+  z-index: 1;
+}
+.cushion__nail__c2 {
+  position: relative;
+  top: -40px;
+  left: 12px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: rgb(232, 232, 232);
+  z-index: 1;
+}
+
+.upgrade__check {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0 5px;
+}
+.upgrade__check input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(156, 156, 156);
+}
+.upgrade__check input:checked {
+  background-color: rgb(156, 156, 156);
+}
+
+.dimensions .col-lg-5 tr {
+  border-bottom: 1px solid grey;
+}
+.dimensions .col-lg-5 th {
+  width: 65%;
+}
+.dimensions .col-lg-5 td {
+  width: 35%;
+}
+.dimensions .col-lg-7 img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .dimensions .col-lg-5 table {
+    width: 100%;
+  }
+  .dimensions .col-lg-5 tr {
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+  }
+  .dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+    white-space: nowrap;
+  }
+}
+.cart {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container--fluid {
+  width: 100%;
+}
+
+[class*=col-] {
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.row {
+  margin: 8px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.row__left {
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .row::-webkit-scrollbar {
+    display: none;
+  }
+}
+.col-lg-1 {
+  width: calc(8.3333333333% - 8px);
+}
+
+.col-lg-2 {
+  width: calc(16.6666666667% - 8px);
+}
+
+.col-lg-3 {
+  width: calc(25% - 8px);
+}
+
+.col-lg-4 {
+  width: calc(33.3333333333% - 8px);
+}
+
+.col-lg-5 {
+  width: calc(41.6666666667% - 8px);
+}
+
+.col-lg-6 {
+  width: calc(50% - 8px);
+}
+
+.col-lg-7 {
+  width: calc(58.3333333333% - 8px);
+}
+
+.col-lg-8 {
+  width: calc(66.6666666667% - 8px);
+}
+
+.col-lg-9 {
+  width: calc(75% - 8px);
+}
+
+.col-lg-10 {
+  width: calc(83.3333333333% - 8px);
+}
+
+.col-lg-11 {
+  width: calc(91.6666666667% - 8px);
+}
+
+.col-lg-12 {
+  width: calc(100% - 8px);
+}
+
+@media screen and (max-width: 1024px) {
+  .col-lg-6 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-7 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-8 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-9 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-10 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-11 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-12 {
+    width: calc(100% - 8px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-lg-1 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-2 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-3 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-4 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-5 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-6 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-7 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-8 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-9 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-10 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-11 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-12 {
+    width: calc(100% - 8px);
+  }
+}
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: hidden;
+}
+.carousel img {
+  width: 100%;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel__preview {
+  display: flex;
+  padding: 20px 0 20px;
+}
+.carousel__preview a {
+  margin-right: 8px;
+}
+.carousel__preview img {
+  max-width: 100px;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel__preview {
+    overflow: auto;
+  }
+  .carousel__preview::-webkit-scrollbar {
+    display: none;
+  }
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container--fluid {
+  width: 100%;
+}
+
+[class*=col-] {
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.row {
+  margin: 8px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.row__left {
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .row::-webkit-scrollbar {
+    display: none;
+  }
+}
+.col-lg-1 {
+  width: calc(8.3333333333% - 8px);
+}
+
+.col-lg-2 {
+  width: calc(16.6666666667% - 8px);
+}
+
+.col-lg-3 {
+  width: calc(25% - 8px);
+}
+
+.col-lg-4 {
+  width: calc(33.3333333333% - 8px);
+}
+
+.col-lg-5 {
+  width: calc(41.6666666667% - 8px);
+}
+
+.col-lg-6 {
+  width: calc(50% - 8px);
+}
+
+.col-lg-7 {
+  width: calc(58.3333333333% - 8px);
+}
+
+.col-lg-8 {
+  width: calc(66.6666666667% - 8px);
+}
+
+.col-lg-9 {
+  width: calc(75% - 8px);
+}
+
+.col-lg-10 {
+  width: calc(83.3333333333% - 8px);
+}
+
+.col-lg-11 {
+  width: calc(91.6666666667% - 8px);
+}
+
+.col-lg-12 {
+  width: calc(100% - 8px);
+}
+
+@media screen and (max-width: 1024px) {
+  .col-lg-6 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-7 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-8 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-9 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-10 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-11 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-12 {
+    width: calc(100% - 8px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-lg-1 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-2 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-3 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-4 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-5 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-6 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-7 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-8 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-9 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-10 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-11 {
+    width: calc(100% - 8px);
+  }
+  .col-lg-12 {
+    width: calc(100% - 8px);
+  }
+}
+@font-face {
+  font-family: "WhyteInktrap-Book";
+  src: url("/2-1-loja/assets/fonts/WhyteInktrap-Book.woff2");
+}
+a {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a.feat_product_shop {
+  font-size: 11.2px;
+  font-weight: bold;
+}
+a.footer__list {
+  color: white;
+  line-height: 2;
+}
+a.site__links {
+  font-size: 9.8px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+p.splash__slogan {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem;
+}
+p.slogan {
+  font-size: 35px;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+p.slogan__video {
+  font-size: 35px;
+  padding: 0 8px 40px;
+  text-align: left;
+}
+p.info__item__text {
+  font-size: 11.2px;
+}
+p.feat__product__name {
+  font-size: 11.2px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0.5rem 1rem;
+}
+p.feat__product__description {
+  font-size: 21px;
+  font-style: italic;
+  padding: 1rem 0.5rem 1rem;
+  line-height: 1.5;
+}
+p.feat__product__description span {
+  font-weight: bold;
+}
+p.category__title {
+  font-size: 35px;
+  padding: 20px 16px 20px;
+}
+p.category__info {
+  padding: 20px 16px 20px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+p.category__product__text {
+  font-weight: bold;
+  padding: 12px 0 8px;
+}
+p.category__product__price {
+  font-size: 11.2px;
+  color: #514F4D;
+}
+p.product__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 16px 20px;
+}
+p.choosen__product__name {
+  font-size: 28px;
+}
+p.choosen__product__price {
+  font-size: 16.8px;
+  padding: 15px 0 15px;
+}
+p.choosen__color {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.choices {
+  padding: 10px 0 10px;
+  font-weight: bold;
+}
+p.about {
+  font-size: 19.6px;
+  padding: 0 8px 20px;
+  line-height: 1.5;
+}
+p.about__title {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__key {
+  font-size: 28px;
+  padding: 40px 8px 40px;
+}
+p.about__title__s {
+  font-size: 16.8px;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+p.about__s {
+  font-size: 16.8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  p.splash__slogan {
+    font-size: 21px;
+  }
+  p.slogan {
+    font-size: 21px;
+  }
+  p.feat__product__description {
+    font-size: 16.8px;
+  }
+  p.about__title__key {
+    text-align: center;
+  }
+}
+.btn__shop, .btn__subscribe, .btn__more, .btn__cart {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+  text-transform: uppercase;
+}
+
+.subscribe input {
+  color: #F7EEE3;
+}
+.subscribe input::-moz-placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.subscribe input::placeholder {
+  color: #F7EEE3;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: white;
+  line-height: 2;
+}
+li.title {
+  font-weight: bold;
+}
+
+.footer__end p {
+  font-size: 9.8px;
+  color: white;
+}
+.footer__end span {
+  font-size: 9.8px;
+  color: white;
+}
+
+label.color {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: black;
+}
+
+.dimensions .col-lg-5 th, .dimensions .col-lg-5 td {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  text-align: left;
+  line-height: 2;
+}
+
+.upgrade__check label {
+  font-size: 14px;
+  font-family: "WhyteInktrap-Book";
+  color: rgb(156, 156, 156);
+  margin-left: 5px;
+}
+.upgrade__check input:checked + label {
+  color: black;
+}
+
+.product-video {
+  width: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 3/4;
+}
+
+@media screen and (max-width: 768px) {
+  .product-video {
+    aspect-ratio: 1;
+  }
+}
+.zero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .videos {
+    max-height: 800px;
+    overflow: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */

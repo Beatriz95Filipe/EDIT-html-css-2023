@@ -1,0 +1,21 @@
+$cols: 12;
+
+// @for $i from 1 to 12 {
+// 	.col-lg-#{$i} {
+// 		width: 100%;
+// 	}
+// }
+
+@for $i from 1 through $cols {
+	.col-lg-#{$i} {
+		width: calc(100% / $cols * $i);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	@for $i from 6 through $cols {
+		.col-lg-#{$i} {
+			width: 100%;
+		}
+	}
+}

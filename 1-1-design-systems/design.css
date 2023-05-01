@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+  }
+
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.avatar__thumbnail {
+    border-radius: 100%;
+    width: 100%;
+}
+
+/* .avatar__status {
+    width: 12px;
+    height: 12px;
+    background: red;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+} */
+
+.avatar::after {
+    width: calc(100% / 5);
+    height: calc(100% / 5);
+    background: red;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.avatar--s {
+    width: 20px;
+    height: 20px;
+}
+
+.avatar--m {
+    width: 30px;
+    height: 30px;
+}
+
+.avatar--l {
+    width: 40px;
+    height: 40px;
+}
+
+.avatar--xl {
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: rgb(234, 234, 234);
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    height: 30px;
+    font-size: 12px;
+}
+
+.btn:hover {
+    box-shadow: 0 0 2px 1px rgba(88, 88, 88, 0.5);
+    cursor: pointer;
+}
+
+.alert {
+    background-color: rgb(234, 234, 234);
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+}
+
+.bg-primary {
+    background-color: rgb(66, 133, 244);
+    color: white;
+}
+
+.btn--line-primary {
+    background-color: white;
+    color: rgb(66, 133, 244);
+    border: 1px solid rgb(66, 133, 244);
+    
+}
+
+.bg-success {
+    background-color: rgb(15, 157, 88);
+    color: white;
+}
+
+.btn--line-success {
+    background-color: white;
+    color: rgb(15, 157, 88);
+    border: 1px solid rgb(15, 157, 88);
+}
+
+.bg-warning {
+    background-color: rgb(244, 160, 0);
+    color: white;
+}
+
+.btn--line-warning {
+    background-color: white;
+    color: rgb(244, 160, 0);
+    border: 1px solid rgb(244, 160, 0);
+}
+
+.bg-error {
+    background-color: rgb(219, 68, 55);
+    color: white;
+}
+
+.btn--line-error {
+    background-color: white;
+    color: rgb(219, 68, 55);
+    border: 1px solid rgb(219, 68, 55);
+}
+
+.btn--small {
+    border-radius: 8px;
+    height: 22px;
+}
+
+
+
+
+
+.close {
+    width: 15px;
+    height: 2px;
+    background: black;
+    border-radius: 8px;
+    margin-left: 5px;
+    position: relative;
+    transform: rotate(45deg);
+  }
+  
+  .close::after {
+    content: '';
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    display: block;
+    background: inherit;
+    transform: rotate(-90deg) ;
+  }
